@@ -15,7 +15,7 @@ const onClose = () => {
     <>
       <div>
         <h1>Start</h1>
-        <button onClick={onClose}>Close</button>
+        <button onClick={onClose}>Закрыть</button>
       </div>
     </>
   )
