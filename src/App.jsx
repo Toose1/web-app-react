@@ -14,7 +14,7 @@ export default function App() {
     <>
       <div>
         <h1>Вкусно и Точка</h1>
-        <TitleName />
+        {/* <TitleName /> */}
         <ButtonClose />
       </div>
     </>
