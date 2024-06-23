@@ -1,12 +1,11 @@
-const tg = window.Telegram.WebApp
+
 
 export default function TitleName() {
+  const tg = window.Telegram.WebApp
 
   return (
     <>
-      <div>
-        <h1>{tg.initDataUnsafe.user.first_name}</h1>
-      </div>
+      <h1>{tg.initDataUnsafe.user.first_name}</h1>
     </>
   )
 }
