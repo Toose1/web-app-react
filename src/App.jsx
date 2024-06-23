@@ -3,7 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './components/Buttons/ButtonClose.css'
 import ButtonClose from './components/Buttons/ButtonClose'
-import SpanName from './components/Header/SpanName'
+import TitleName from './components/Header/TitleName'
 
 const tg = window.Telegram.WebApp
 
@@ -14,7 +14,7 @@ export default function App() {
     <>
       <div>
         <h1>Вкусно и Точка</h1>
-        <SpanName />
+        <TitleName />
         <ButtonClose />
       </div>
     </>
