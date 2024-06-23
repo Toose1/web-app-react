@@ -1,21 +1,20 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './components/Buttons/ButtonClose.css'
+import ButtonClose from './components/Buttons/ButtonClose'
 
 
 const tg = window.Telegram.WebApp
 
 export default function App() {
   
-const onClose = () => {
-  tg.close()
-}
 
   return (
     <>
       <div>
-        <h1>Start</h1>
-        <button onClick={onClose}>Закрыть</button>
+        <h1>Вкусно и Точка</h1>
+        <ButtonClose />
       </div>
     </>
   )
