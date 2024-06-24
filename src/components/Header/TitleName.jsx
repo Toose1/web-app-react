@@ -2,8 +2,8 @@ import { useTelegram } from "../../hooks/useTelegram"
 import { useState } from "react"
 
 export default function TitleName() {
-  const {user} = useTelegram()
-  [typeButton, setType] = useState("Show main button")
+  const {user} = useTelegram();
+  const [typeButton, setType] = useState("Show main button");
 
   const onSpecialButton = () => {
     if(!tg.MainButton.isVisible) {
