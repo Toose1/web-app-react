@@ -7,15 +7,15 @@ import { useTelegram } from './hooks/useTelegram'
 
 export default function App() {
 
-  // const {tg} = useTelegram()
-  // useEffect(() => {
-  //   tg.expand()
-  // }, [])
+  const {tg} = useTelegram()
+  useEffect(() => {
+    tg.expand()
+  }, [])
   
   return (
     <>
       <div>
-        {/* <TitleName /> */}
+        <TitleName />
         <h2>Вкусно и точка</h2>
         <ButtonClose />
       </div>
