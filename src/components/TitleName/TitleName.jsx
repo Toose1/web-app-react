@@ -5,7 +5,7 @@ import "./TitleName.css"
 export default function TitleName() {
   const {tg, user} = useTelegram()
   const [typeButton, setType] = useState("Show main button")
-  console.log("rendered")
+  console.assert("dd")
 
 
   const onSpecialButton = () => {
