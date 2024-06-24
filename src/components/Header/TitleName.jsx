@@ -3,7 +3,7 @@ import { useState } from "react"
 
 export default function TitleName() {
   const {user} = useTelegram()
-  const [typeButton, setType] = useState("Show main button")
+  [typeButton, setType] = useState("Show main button")
 
   const onSpecialButton = () => {
     if(!tg.MainButton.isVisible) {
@@ -17,7 +17,7 @@ export default function TitleName() {
 
   return (
     <>
-      <h5>Здравствуйте {useTelegram().user.first_name}</h5>
+      <h5>Здравствуйте {user.first_name}</h5>
       <button onClick={onSpecialButton}>{typeButton}</button>
     </>
   )
