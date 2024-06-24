@@ -1,5 +1,6 @@
 import { useTelegram } from "../../hooks/useTelegram"
 import { useState } from "react"
+import "./TitleName.css"
 
 export default function TitleName() {
   const {tg, user} = useTelegram()
