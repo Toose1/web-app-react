@@ -1,7 +1,7 @@
 import { useTelegram } from "../../hooks/useTelegram"
 
 export default function ButtonClose() {
-  const {onClose} = useTelegram()
+  const {onClose} = useTelegram();
 
   return (
     <>
