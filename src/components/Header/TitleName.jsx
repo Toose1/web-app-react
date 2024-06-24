@@ -17,7 +17,7 @@ export default function TitleName() {
 
   return (
     <>
-      <h5>Здравствуйте {user.first_name}</h5>
+      <h5>Welcome {user.first_name}</h5>
       <button onClick={onSpecialButton}>{typeButton}</button>
     </>
   )
