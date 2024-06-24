@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       <div>
-        <span>здравствуйте </span><TitleName />
+        <TitleName />
         <h1>Вкусно и Точка</h1>
         <ButtonClose />
       </div>
