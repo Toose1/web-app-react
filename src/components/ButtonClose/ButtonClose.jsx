@@ -1,5 +1,5 @@
 import { useTelegram } from "../../hooks/useTelegram"
-import './components/Buttons/ButtonClose.css'
+import './ButtonClose.css'
 
 export default function ButtonClose() {
   const {onClose} = useTelegram();

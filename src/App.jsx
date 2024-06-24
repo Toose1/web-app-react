@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ButtonClose from './components/Buttons/ButtonClose'
-import TitleName from './components/Header/TitleName'
+import ButtonClose from './components/ButtonClose/ButtonClose'
+import TitleName from './components/TitleName/TitleName'
 import { useTelegram } from './hooks/useTelegram'
 
 export default function App() {
