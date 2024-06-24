@@ -15,7 +15,7 @@ export default function App() {
   return (
     <>
       <div>
-        <TitleName />
+        {/* <TitleName /> */}
         <h2>Вкусно и точка</h2>
         <ButtonClose />
       </div>
