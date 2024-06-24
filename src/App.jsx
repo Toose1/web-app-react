@@ -7,10 +7,10 @@ import { useTelegram } from './hooks/useTelegram'
 
 export default function App() {
 
-  const {tg} = useTelegram()
-  useEffect(() => {
-    tg.expand()
-  }, [])
+  // const {tg} = useTelegram()
+  // useEffect(() => {
+  //   tg.expand()
+  // }, [])
   
   return (
     <>
