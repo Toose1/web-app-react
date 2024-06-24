@@ -3,7 +3,7 @@ import './ButtonClose.css'
 
 export default function ButtonClose() {
   const {onClose} = useTelegram();
-
+  
   return (
     <>
       <div>
