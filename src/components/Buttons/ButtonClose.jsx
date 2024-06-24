@@ -8,7 +8,6 @@ export default function ButtonClose() {
   return (
     <>
       <div>
-        <h3>{tg.initDataUnsafe.user.first_name}</h3>
         <button onClick={onClose}>Закрыть web-приложение</button>
       </div>
     </>

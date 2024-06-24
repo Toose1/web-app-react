@@ -5,7 +5,7 @@ export default function TitleName() {
 
   return (
     <>
-      <h2>{tg.initDataUnsafe.user.username}</h2>
+      <h3>{tg.initDataUnsafe.user.username}</h3>
     </>
   )
 }
