@@ -10,7 +10,7 @@ export default function App() {
 
   const {tg} = useTelegram()
   useEffect(() => {
-    tg.ready()
+    tg.expand()
   }, [])
   
   return (
