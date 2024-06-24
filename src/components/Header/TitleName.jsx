@@ -6,7 +6,7 @@ export default function TitleName() {
   return (
     <>
       <h5>Здравствуйте {useTelegram().user.first_name}</h5>
-      <button onClick={onSpecialButton}></button>
+      <button onClick={onSpecialButton}>Show main button</button>
     </>
   )
 }
