@@ -5,8 +5,6 @@ import "./TitleName.css"
 export default function TitleName() {
   const {tg, user} = useTelegram()
   const [typeButton, setType] = useState("Show main button")
-  console.assert("dd")
-
 
   const onSpecialButton = () => {
     if(!tg.MainButton.isVisible) {

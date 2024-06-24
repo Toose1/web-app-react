@@ -7,7 +7,7 @@ export default function ButtonClose() {
   return (
     <>
       <div>
-        <button onClick={onClose}>Закрыть web-приложение</button>
+        <button onClick={onClose}>Close web-app</button>
       </div>
     </>
   )
