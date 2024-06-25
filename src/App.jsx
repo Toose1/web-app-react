@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
-import ButtonClose from './components/ButtonClose/ButtonClose'
-import TitleName from './components/TitleName/TitleName'
 import { useTelegram } from './hooks/useTelegram'
 import { Route, Routes } from 'react-router-dom'
 import ProductList from './components/ProductList/ProductList'
-import Form from './components/Form/Form'
 
 export default function App() {
-
   const {tg} = useTelegram()
+  
   useEffect(() => {
     tg.expand()
   }, [])
@@ -18,10 +14,9 @@ export default function App() {
   return (
     <>
       <div className='App'>
-        <h1>fff</h1>
-        {/* <Routes>
+        <Routes>
           <Route index element={<ProductList />}/>
-        </Routes> */}
+        </Routes>
       </div>
     </>
   )

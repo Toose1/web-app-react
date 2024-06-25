@@ -8,7 +8,7 @@ const products = [
   {id: 3, title: "Icecream", price: 160, description: "ice ice ice"},
   {id: 4, title: "Pizza", price: 990, description: "mamma mia pizza deliziosa"},
   {id: 5, title: "Taco", price: 699, description: "52"},
-  {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"},
+  {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"}
 ]
 
 export default function ProductList() {
