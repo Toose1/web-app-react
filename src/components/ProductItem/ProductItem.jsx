@@ -15,9 +15,8 @@ export default function ProductItem({product, className, onAdd}) {
             <div className={"price"}>
                 <span>Стоимость: <b>{product.price}</b></span>
             </div>
-            <Button onClick={onAddHandler} className={"add-btn"}>
-                Добавить
-            </Button>
+            <Button title="Добавить" onClick={onAddHandler} />
+
         </div>
       </>
     )
