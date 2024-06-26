@@ -1,8 +1,10 @@
+import { useTelegram } from "../../hooks/useTelegram"
 import Button from "../Button/Button"
 
 export default function ProductItem({product, className, onAdd}) {
-
+    const {tg} = useTelegram()
     const onAddHandler = () => {
+        tg.MainButton.show()
         onAdd(product)
     }
     
