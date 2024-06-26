@@ -11,30 +11,29 @@ const products = [
   {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"}
 ]
 
+function sumOfProducts(products) {
+  total = 0
+  for (i in products) {
+    sum += i.price
+  }
+
+}
+
 export default function ProductList() {
 
   const [addedItems, setAddedItems] = useState([])
   const {tg} = useTelegram()
 
   const onAddEvent = (product) => {
-    tg.MainButton.show()
-    const alreadyAdded = addedItems.find(item => item.id === product.id)
-    let newItems = []
 
-    if (alreadyAdded) {
-      newItems = addedItems.filter(item => item.id !== product.id)
-    } else {
-      newItems = [...addedItems, product]
-    }
-
-    setAddedItems(newItems)
+    setAddedItems(product)
 
     if (addedItems.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-      text: "Купить $$$"
+      text: "Купить " + sumOfProducts(addedItems)
       })
 
     }
