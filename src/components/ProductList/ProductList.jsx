@@ -17,10 +17,11 @@ export default function ProductList() {
   const {tg} = useTelegram()
 
   const onAddEvent = (product) => {
+    tg.MainButton.show()
     const alreadyAdded = addedItems.find(item => item.id === product.id)
     let newItems = []
 
-    if(alreadyAdded) {
+    if (alreadyAdded) {
       newItems = addedItems.filter(item => item.id !== product.id)
     } else {
       newItems = [...addedItems, product]
@@ -28,7 +29,7 @@ export default function ProductList() {
 
     setAddedItems(newItems)
 
-    if(addedItems.length > 0) {
+    if (addedItems.length > 0) {
       tg.MainButton.show()
     } else {
       tg.MainButton.hide()
