@@ -16,7 +16,7 @@ export default function ProductList() {
   const [addedItems, setAddedItems] = useState([])
   const {tg} = useTelegram()
 
-  const onAdd = (product) => {
+  const onAddEvent = (product) => {
     const alreadyAdded = addedItems.find(item => item.id === product.id)
     let newItems = []
 
@@ -28,13 +28,13 @@ export default function ProductList() {
 
     setAddedItems(newItems)
 
-    if(addedItems.length === 0) {
-      tg.MainButton.hide()
-    } else {
+    if(addedItems.length > 0) {
       tg.MainButton.show()
-      tg.MainButton.setParams({
-        text: "Купить $$$"
-      })
+    } else {
+      tg.MainButton.hide()
+      // tg.MainButton.setParams({
+      //   text: "Купить $$$"
+      // })
     }
   }
     
@@ -42,7 +42,7 @@ export default function ProductList() {
     <>
       <div className={"list"}>
         {products.map(item => (
-          <ProductItem product={item} onAdd={onAdd} className={"item"}/>
+          <ProductItem product={item} className={"item"} onAdd={onAddEvent}/>
           ))}
       </div>
     </>
