@@ -31,11 +31,12 @@ export default function ProductList() {
 
     if (addedItems.length > 0) {
       tg.MainButton.show()
+      tg.MainButton.setParams({
+      text: "Купить $$$"
+      })
     } else {
       tg.MainButton.hide()
-      // tg.MainButton.setParams({
-      //   text: "Купить $$$"
-      // })
+
     }
   }
     

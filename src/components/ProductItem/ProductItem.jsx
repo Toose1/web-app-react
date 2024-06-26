@@ -4,7 +4,6 @@ import Button from "../Button/Button"
 export default function ProductItem({product, className, onAdd}) {
     const {tg} = useTelegram()
     const onAddHandler = () => {
-        tg.MainButton.show()
         onAdd(product)
     }
     
@@ -17,7 +16,7 @@ export default function ProductItem({product, className, onAdd}) {
             <div className={"price"}>
                 <span>Стоимость: <b>{product.price}</b></span>
             </div>
-            <Button title="Добавить" onClick={onAddHandler}/>
+            <Button title="Добавить" onClickEvent={onAddHandler}/>
 
         </div>
       </>
