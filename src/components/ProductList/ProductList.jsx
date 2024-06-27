@@ -11,13 +11,13 @@ const products = [
   {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"}
 ]
 
-function sumOfProducts(products) {
-  total = 0
-  for (i in products) {
-    sum += i.price
-  }
-  return total
-}
+// function sumOfProducts(products) {
+//   total = 0
+//   for (i in products) {
+//     sum += i.price
+//   }
+//   return total
+// }
 
 export default function ProductList() {
 
