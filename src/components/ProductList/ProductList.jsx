@@ -25,18 +25,18 @@ export default function ProductList() {
   const {tg} = useTelegram()
 
   const onAddEvent = (product) => {
-    tg.MainButton.show()
     let newItems = []
     newItems = [...addedItems, product]
-    console.log(newItems)
-    console.log("f")
     setAddedItems(newItems)
 
-    // if (newItems.length === 0) {
-    //   tg.MainButton.hide()
-    // } else {
-    //   tg.MainButton.show()
-    // }
+    if (newItems.length === 0) {
+      tg.MainButton.hide()
+    } else {
+      tg.MainButton.show()
+      tg,MainButton.setParams({
+        text: "{newItems}"
+      })
+    }
   }
     
   return (
