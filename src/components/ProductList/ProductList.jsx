@@ -34,7 +34,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${newItems.length}`
+        text: `Купить: ${addedItems.length}`
       })
     }
   }
