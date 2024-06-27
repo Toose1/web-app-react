@@ -17,7 +17,6 @@ function sumOfProducts(products) {
     sum += i.price
   }
   return total
-
 }
 
 export default function ProductList() {
