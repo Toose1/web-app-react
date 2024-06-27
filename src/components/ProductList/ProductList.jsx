@@ -29,9 +29,9 @@ export default function ProductList() {
     newItems = [...addedItems, product]
     setAddedItems(newItems)
     tg.MainButton.show()
-    tg.MainButton.setParams({
-      text: "Купить ${sumOfProducts(addedItems)}"
-    })
+    // tg.MainButton.setParams({
+    //   text: "Купить ${sumOfProducts(addedItems)}"
+    // })
     // if (addedItems.length === 0) {
     //   tg.MainButton.hide()
     // } else {
