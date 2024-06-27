@@ -25,8 +25,7 @@ export default function ProductList() {
   const {tg} = useTelegram()
 
   const onAddEvent = (product) => {
-    let newItems = []
-    newItems = [...addedItems, product]
+    let newItems = [...addedItems, product]
     setAddedItems(newItems)
     
     if (newItems.length === 0) {
@@ -34,7 +33,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${addedItems.length}`
+        text: `Купить: ${newItems.length}`
       })
     }
   }
