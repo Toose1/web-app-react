@@ -16,6 +16,7 @@ function sumOfProducts(products) {
   for (i in products) {
     sum += i.price
   }
+  return total
 
 }
 
