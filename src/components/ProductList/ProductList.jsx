@@ -28,13 +28,13 @@ export default function ProductList() {
     let newItems = []
     newItems = [...addedItems, product]
     setAddedItems(newItems)
-
+    
     if (newItems.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: "111" + 2
+        text: `Купить: ${newItems.length}`
       })
     }
   }
