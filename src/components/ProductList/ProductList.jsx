@@ -42,6 +42,7 @@ export default function ProductList() {
   const onRemove = (item) => {
     let newItems = []
     for(let i; i < addedItems.length-1; i++) {
+      console.log(addedItems[i].title)
       if(addedItems[i].id === item.id) {
         newItems = addedItems.slice(index, 1)
         setAddedItems(newItems)
