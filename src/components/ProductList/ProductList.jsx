@@ -13,7 +13,7 @@ const products = [
 
 function sumOfProducts(items) {
   total = 0
-  for (i in items) {
+  for (var i in items) {
     total += i.quantity
   }
   return total
@@ -40,7 +40,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${addedItems.map(x => x.quantity)}`
+        text: `Купить: ${sumOfProducts(cart)}`
       })
     }
 
@@ -57,12 +57,13 @@ export default function ProductList() {
       setAddedItems(cart)
     }
 
+    
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${addedItems.map(x => x.quantity)}`
+        text: `Купить: ${sumOfProducts(cart)}`
       })
     }
   }
