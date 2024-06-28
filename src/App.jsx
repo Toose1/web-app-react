@@ -18,6 +18,7 @@ export default function App() {
         <Routes>
           <Route index element={<Card />}/>
         </Routes>
+        <button>Test</button>
       </div>
     </>
   )
