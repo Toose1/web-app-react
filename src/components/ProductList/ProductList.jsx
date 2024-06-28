@@ -35,7 +35,6 @@ export default function ProductList() {
       setAddedItems(cart)
     }
 
-    console.log(cart)
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
@@ -51,15 +50,13 @@ export default function ProductList() {
     let exist = addedItems.find(i => i.id === item.id)
     let cart = []
     if(exist.quantity === 1) {
-      cart = addedItems.sort(x => x.id !== item.id)
+      cart = addedItems.filter(x => x.id !== item.id)
       setAddedItems(cart)
     } else {
       cart = addedItems.map(x => x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x)
       setAddedItems(cart)
     }
     
-
-
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
