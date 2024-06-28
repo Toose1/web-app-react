@@ -41,7 +41,7 @@ export default function ProductList() {
 
   const onRemove = (item) => {
     let newItems = []
-    for(let prod in addedItems) {
+    for(var prod in addedItems) {
       console.log(prod.title)
     }
     
