@@ -29,7 +29,7 @@ export default function ProductList() {
     }
     let total = 0
     for (var i in cart) {
-      total += parseInt(i.quantity)
+      console.log(i.quantity)
     }
 
     if (cart.length === 0) {
