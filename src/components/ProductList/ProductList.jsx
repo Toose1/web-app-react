@@ -25,32 +25,40 @@ export default function ProductList() {
   const {tg} = useTelegram()
 
   const onAdd = (item) => {
-    let newItems = [...addedItems, item]
-    setAddedItems(newItems)
-    console.log(`newItems: ${newItems.map(i => i.id)}`, ` addedItems: ${newItems.map(i => i.id)}`)
+    let exist = addedItems.find(i => i.id === item.id)
+    if(exist) {
+      setAddedItems(
+        addedItems.map(i => i.id === item.id ? {...item, quantity: exist.quantity + 1 } : i)
+      )
+    } else {
+      setAddedItems([...addedItems, {...item, quantity: 1}])
+    }
 
-    if (newItems.length === 0) {
+    if (addedItems.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${newItems.length}`
+        text: `Купить: ${addedItems.length}`
       })
     }
+
   }
 
   const onRemove = (item) => {
-    let newItems = []
-    for(var prod in addedItems) {
-      console.log(prod.title)
+    let exist = addedItems.find(i => i.id === item.id)
+    if(exist.quantity === 1) {
+      setAddedItems(addedItems.sort(x => x.id !== item.id))
+    } else {
+      setAddedItems(addedItems.map(x => x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x))
     }
-    
-    if (newItems.length === 0) {
+
+    if (addedItems.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${newItems.length}`
+        text: `Купить: ${addedItems.length}`
       })
     }
   }
