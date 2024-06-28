@@ -43,7 +43,7 @@ export default function ProductList() {
     let newItems = addedItems.slice(index, 1)
     setAddedItems(newItems)
 
-    if (newItems.length - 1 === 0) {
+    if (newItems.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
