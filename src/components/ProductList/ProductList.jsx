@@ -11,6 +11,13 @@ const products = [
   {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"}
 ]
 
+function sumOfQuantity(items) {
+  let total = 0
+  for(let item of items){
+    total += item.quantity
+  }
+  return total
+}
 
 export default function ProductList() {
 
@@ -34,7 +41,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `В корзине:`
+        text: `В корзине: ${sumOfQuantity(cart)}`
       })
     }
 
@@ -58,7 +65,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `В корзине:`
+        text: `В корзине: ${sumOfQuantity(cart)}`
       })
     }
   }
