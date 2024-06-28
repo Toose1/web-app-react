@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import Button from '../Button/Button'
 import "./Card.css"
 
-function Card({item, onClick}) {
+function Card({item, onAdd, onRemove}) {
     const [count, setCount] = useState(0)
 
     const addItem = () => {
         setCount(count+1)
-        onClick(item)
+        onAdd(item)
     }
 
     const removeItem = () => {
@@ -15,7 +15,7 @@ function Card({item, onClick}) {
             setCount(0)
         } else {
             setCount(count-1)
-            onClick(item)
+            onRemove(item)
         }
     }
 
