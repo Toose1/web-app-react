@@ -7,6 +7,7 @@ function Card() {
         Card
         <Button title={"Добавить"} type={"add"} disable={false} onClick={() => console.log("add")}/>
         <Button title={"Убрать"} type={"remove"} disable={false} onClick={() => console.log("remove")}/>
+        <button>Hi</button>
     </div>
   )
 }

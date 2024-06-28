@@ -17,7 +17,6 @@ export default function App() {
       <div className='App'>
         <Routes>
           <Route index element={<Card />}/>
-          <button>Hi</button>
         </Routes>
       </div>
     </>
