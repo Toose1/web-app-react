@@ -34,7 +34,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${cart.quantity}`
+        text: `Купить: ${cart[0].quantity}`
       })
     }
 
