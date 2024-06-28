@@ -5,8 +5,8 @@ function Card() {
   return (
     <div>
         Card
-        <Button title={"Добавить"} type={"add"} disable={false} />
-        <Button title={"Убрать"} type={"remove"} disable={false} />
+        <Button title={"Добавить"} type={"add"} disable={false} onClick={() => console.log("add")}/>
+        <Button title={"Убрать"} type={"remove"} disable={false} onClick={() => console.log("remove")}/>
     </div>
   )
 }
