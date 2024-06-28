@@ -32,6 +32,7 @@ export default function ProductList() {
     for(let i in cart) {
       total += i[quantity]
     }
+
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
@@ -58,6 +59,7 @@ export default function ProductList() {
     for(let i in cart) {
       total += i[quantity]
     }
+    
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
