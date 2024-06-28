@@ -26,20 +26,21 @@ export default function ProductList() {
 
   const onAdd = (item) => {
     let exist = addedItems.find(i => i.id === item.id)
+    let cart = []
     if(exist) {
-      setAddedItems(
-        addedItems.map(i => i.id === item.id ? {...item, quantity: exist.quantity + 1 } : i)
-      )
+      cart = addedItems.map(i => i.id === item.id ? {...item, quantity: exist.quantity + 1 } : i)
+      setAddedItems(cart)
     } else {
-      setAddedItems([...addedItems, {...item, quantity: 1}])
+      cart = [...addedItems, {...item, quantity: 1}]
+      setAddedItems(cart)
     }
 
-    if (addedItems.length === 0) {
+    if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${addedItems.length}`
+        text: `Купить: ${cart.length}`
       })
     }
 
@@ -47,18 +48,21 @@ export default function ProductList() {
 
   const onRemove = (item) => {
     let exist = addedItems.find(i => i.id === item.id)
+    let cart = []
     if(exist.quantity === 1) {
-      setAddedItems(addedItems.sort(x => x.id !== item.id))
+      cart = addedItems.sort(x => x.id !== item.id)
+      setAddedItems(cart)
     } else {
-      setAddedItems(addedItems.map(x => x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x))
+      cart = addedItems.map(x => x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x)
+      setAddedItems(cart)
     }
 
-    if (addedItems.length === 0) {
+    if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${addedItems.length}`
+        text: `Купить: ${cart.length}`
       })
     }
   }
