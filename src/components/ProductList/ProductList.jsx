@@ -27,7 +27,7 @@ export default function ProductList() {
   const onAdd = (item) => {
     let newItems = [...addedItems, item]
     setAddedItems(newItems)
-    console.log(`Корзина: ${newItems.map(i => i.id)}`)
+    console.log(`newItems: ${newItems.map(i => i.id)}`, ` addedItems: ${newItems.map(i => i.id)}`)
 
     if (newItems.length === 0) {
       tg.MainButton.hide()
@@ -45,7 +45,7 @@ export default function ProductList() {
       if(value.id === item.id) {
         newItems = addedItems.slice(index, 1)
         setAddedItems(newItems)
-        console.log(`Корзина: ${newItems.map(i => i.id)}`)
+        console.log(`newItems: ${newItems.map(i => i.id)}`, ` addedItems: ${newItems.map(i => i.id)}`)
       }
     })
     
