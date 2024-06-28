@@ -38,7 +38,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${total}`
+        text: `Купить:`
       })
     }
 
@@ -59,13 +59,13 @@ export default function ProductList() {
     for(let i in cart) {
       total += i[quantity]
     }
-    
+
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${total}`
+        text: `Купить:`
       })
     }
   }
