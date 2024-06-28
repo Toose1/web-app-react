@@ -11,8 +11,8 @@ function Card({item, onAdd, onRemove}) {
     }
 
     const removeItem = () => {
-        let counter = count - 1
-        if(counter === 0) {
+\
+        if(count === 0) {
             setCount(0)
             onRemove(item)
         } else {
