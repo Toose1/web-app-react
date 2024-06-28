@@ -1,18 +1,21 @@
 import React, { useState } from 'react'
 import Button from '../Button/Button'
+import "./Card.css"
 
 function Card({item, onClick}) {
     const [count, setCount] = useState(0)
 
     const addItem = () => {
         setCount(count+1)
+        onClick(item)
     }
 
     const removeItem = () => {
-        if(count===0) {
+        if(count === 0) {
             setCount(0)
         } else {
             setCount(count-1)
+            onClick(item)
         }
     }
 
@@ -27,12 +30,13 @@ function Card({item, onClick}) {
             </div>
              
             <div className="btn-container">
-                {count===0 ? 
-                <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
-                <div>
-                    <Button title={"+"} type={"add"} disable={false} onClick={addItem}/>
-                    <Button title={"-"} type={"remove"} disable={false} onClick={removeItem}/>
-                </div>
+                {
+                    count === 0 ? 
+                    <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
+                    <div>
+                        <Button title={"+"} type={"add"} disable={false} onClick={addItem}/>
+                        <Button title={"-"} type={"remove"} disable={false} onClick={removeItem}/>
+                    </div>
                 }
             </div>
 
