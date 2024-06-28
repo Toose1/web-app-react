@@ -40,11 +40,11 @@ export default function ProductList() {
 
   const onRemove = (item) => {
     let index = addedItems.lastIndexOf(product => product.id === item.id)
+    let newItems = []
     console.log(index)
-    if(index !== -1 || index === null) {
-      let newItems = addedItems.slice(index, 1)
-      setAddedItems(newItems)
-    }
+    
+    newItems = addedItems.slice(index, 1)
+    setAddedItems(newItems)
 
     if (newItems.length === 0) {
       tg.MainButton.hide()
