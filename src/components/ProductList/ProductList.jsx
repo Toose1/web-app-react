@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ProductItem from "../ProductItem/ProductItem"
+import Card from "../Card/Card"
 import { useTelegram } from "../../hooks/useTelegram"
 
 const products = [
@@ -42,7 +42,7 @@ export default function ProductList() {
     <>
       <div className={"list"}>
         {products.map(item => (
-          <ProductItem product={item} className={"item"} onAdd={onAddEvent}/>
+          <Card item={item} onClick={onAddEvent}/>
           ))}
       </div>
     </>

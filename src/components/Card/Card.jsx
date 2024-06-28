@@ -1,14 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../Button/Button'
 
-function Card() {
-  return (
-    <div>
-        Card
-        <Button title={"Добавить"} type={"add"} disable={false} onClick={() => console.log("add")}/>
-        <Button title={"Убрать"} type={"remove"} disable={false} onClick={() => console.log("remove")}/>
-    </div>
-  )
+function Card({item, onClick}) {
+    const [count, setCount] = useState(0)
+
+    const addItem = () => {
+        setCount(count+1)
+    }
+
+    const removeItem = () => {
+        if(count===0) {
+            setCount(0)
+        } else {
+            setCount(count-1)
+        }
+    }
+
+    return (
+        <div className='card'>
+            <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
+
+            <div className={"card__title"}>{item.title}</div>
+            <div className={"card__description"}>{item.description}</div>
+            <div className={"card__price"}>
+                <span>Стоимость: <b>{item.price}</b></span>
+            </div>
+             
+            <div className="btn-container">
+                {count===0 ? 
+                <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
+                <div>
+                    <Button title={"+"} type={"add"} disable={false} onClick={addItem}/>
+                    <Button title={"-"} type={"remove"} disable={false} onClick={removeItem}/>
+                </div>
+                }
+            </div>
+
+
+
+        </div>
+    )
 }
 
 export default Card
