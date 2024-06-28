@@ -24,10 +24,25 @@ export default function ProductList() {
   const [addedItems, setAddedItems] = useState([])
   const {tg} = useTelegram()
 
-  const onAddEvent = (product) => {
-    let newItems = [...addedItems, product]
+  const onAdd = (item) => {
+    let newItems = [...addedItems, item]
     setAddedItems(newItems)
-    
+
+    if (newItems.length === 0) {
+      tg.MainButton.hide()
+    } else {
+      tg.MainButton.show()
+      tg.MainButton.setParams({
+        text: `Купить: ${newItems.length}`
+      })
+    }
+  }
+
+  const onRemove = (item) => {
+    let index = addedItems.lastIndexOf(product => product.id === item.id)
+    let newItems = addedItems.slice(index, 1)
+    setAddedItems(newItems)
+
     if (newItems.length === 0) {
       tg.MainButton.hide()
     } else {

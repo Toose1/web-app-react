@@ -18,7 +18,6 @@ export default function App() {
         <Routes>
           <Route index element={<ProductList />}/>
         </Routes>
-        <button>Test</button>
       </div>
     </>
   )
