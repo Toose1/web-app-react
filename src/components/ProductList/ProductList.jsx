@@ -27,7 +27,7 @@ export default function ProductList() {
   const onAdd = (item) => {
     let newItems = [...addedItems, item]
     setAddedItems(newItems)
-    console.log(`Корзина: ${newItems}`)
+    console.log(`Корзина: ${newItems.map(i => i.id)}`)
 
     if (newItems.length === 0) {
       tg.MainButton.hide()
@@ -40,12 +40,12 @@ export default function ProductList() {
   }
 
   const onRemove = (item) => {
-
+    let newItems = []
     let index = addedItems.forEach((value, index, arr) => {
       if(value.id === item.id) {
-        let newItems = addedItems.slice(index, 1)
+        newItems = addedItems.slice(index, 1)
         setAddedItems(newItems)
-        console.log(`Корзина: ${newItems}`)
+        console.log(`Корзина: ${newItems.map(i => i.id)}`)
       }
     })
     
