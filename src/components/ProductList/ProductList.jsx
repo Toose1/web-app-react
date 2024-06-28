@@ -11,10 +11,10 @@ const products = [
   {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"}
 ]
 
-function sumOfProducts(products) {
+function sumOfProducts(items) {
   total = 0
-  for (i in products) {
-    sum += i.price
+  for (i in items) {
+    total += i.quantity
   }
   return total
 }
@@ -40,7 +40,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${cart.length}`
+        text: `Купить: ${sumOfProducts(addedItems)}`
       })
     }
 
@@ -62,7 +62,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${cart.length}`
+        text: `Купить: ${sumOfProducts(addedItems)}`
       })
     }
   }
