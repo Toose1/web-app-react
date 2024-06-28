@@ -12,13 +12,9 @@ function Card({item, onAdd, onRemove}) {
 
     const removeItem = () => {
 
-        if(count-1 === 0) {
-            setCount(0)
-            onRemove(item)
-        } else {
-            setCount(count-1)
-            onRemove(item)
-        }
+        setCount(count-1)
+        onRemove(item)
+        
     }
 
     return (
