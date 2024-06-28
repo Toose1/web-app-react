@@ -11,9 +11,9 @@
     transition: border-color 0.25s;
 }
 
-.btn:hover {
+/* .btn:hover {
   border-color: #11c526;
-}
+} */
   /* button:focus,
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
