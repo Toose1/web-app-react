@@ -28,7 +28,7 @@ export default function ProductList() {
     let exist = addedItems.find(i => i.id === item.id)
     let cart = []
     if(exist) {
-      cart = addedItems.map(i => i.id === item.id ? {...item, quantity: exist.quantity + 1 } : i)
+      cart = addedItems.map(i => i.id === item.id ? {...exist, quantity: exist.quantity + 1 } : i)
       setAddedItems(cart)
     } else {
       cart = [...addedItems, {...item, quantity: 1}]
