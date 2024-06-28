@@ -27,7 +27,7 @@ export default function ProductList() {
   const onAdd = (item) => {
     let newItems = [...addedItems, item]
     setAddedItems(newItems)
-    console.log(`Корзина: ${newItems}`)
+    console.log(`Корзина: ${newItems.map(i => i.id)}`)
 
     if (newItems.length === 0) {
       tg.MainButton.hide()
