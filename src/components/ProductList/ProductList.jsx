@@ -27,17 +27,14 @@ export default function ProductList() {
       cart = [...addedItems, {...item, quantity: 1}]
       setAddedItems(cart)
     }
-    let total = 0
-    for (var i in cart) {
-      console.log(i.quantity)
-    }
+    
 
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${total}`
+        text: `Купить: ${cart.quantity}`
       })
     }
 
@@ -53,17 +50,13 @@ export default function ProductList() {
       cart = addedItems.map(x => x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x)
       setAddedItems(cart)
     }
-    let total = 0
-    for (var i in cart) {
-      total += parseInt(i.quantity)
-    }
     
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${total}`
+        text: `Купить: ${cart.quantity}`
       })
     }
   }
