@@ -28,7 +28,7 @@ export default function ProductList() {
       setAddedItems(cart)
     }
 
-
+    console.log(cart)
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
@@ -58,7 +58,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить:`
+        text: `В корзине:`
       })
     }
   }
