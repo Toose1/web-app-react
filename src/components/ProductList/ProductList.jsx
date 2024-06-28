@@ -11,13 +11,6 @@ const products = [
   {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"}
 ]
 
-function sumOfProducts(items) {
-  total = 0
-  for (var i in items) {
-    total += i.quantity
-  }
-  return total
-}
 
 export default function ProductList() {
 
@@ -34,13 +27,17 @@ export default function ProductList() {
       cart = [...addedItems, {...item, quantity: 1}]
       setAddedItems(cart)
     }
+    let total = 0
+    for (var i in cart) {
+      total += i.quantity
+    }
 
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${sumOfProducts(cart)}`
+        text: `Купить: ${total}`
       })
     }
 
@@ -56,14 +53,17 @@ export default function ProductList() {
       cart = addedItems.map(x => x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x)
       setAddedItems(cart)
     }
-
+    let total = 0
+    for (var i in cart) {
+      total += i.quantity
+    }
     
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${sumOfProducts(cart)}`
+        text: `Купить: ${total}`
       })
     }
   }
