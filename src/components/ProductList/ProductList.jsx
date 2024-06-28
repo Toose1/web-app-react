@@ -40,7 +40,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${sumOfProducts(addedItems)}`
+        text: `Купить: ${addedItems.map(x => x.quantity)}`
       })
     }
 
@@ -62,7 +62,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${sumOfProducts(addedItems)}`
+        text: `Купить: ${addedItems.map(x => x.quantity)}`
       })
     }
   }
