@@ -27,18 +27,14 @@ export default function ProductList() {
       cart = [...addedItems, {...item, quantity: 1}]
       setAddedItems(cart)
     }
-    
-    let total = 0
-    for(let i in cart) {
-      total += i[quantity]
-    }
+
 
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить:`
+        text: `В корзине:`
       })
     }
 
@@ -55,10 +51,7 @@ export default function ProductList() {
       setAddedItems(cart)
     }
     
-    let total = 0
-    for(let i in cart) {
-      total += i[quantity]
-    }
+
 
     if (cart.length === 0) {
       tg.MainButton.hide()
