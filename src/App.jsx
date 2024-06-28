@@ -16,7 +16,7 @@ export default function App() {
     <>
       <div className='App'>
         <Routes>
-          <Route index element={<Card />}/>
+          <Route index element={<ProductList />}/>
         </Routes>
         <button>Test</button>
       </div>
