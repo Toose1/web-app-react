@@ -28,13 +28,16 @@ export default function ProductList() {
       setAddedItems(cart)
     }
     
-
+    let total = 0
+    for(let i in cart) {
+      total += i[quantity]
+    }
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${cart[0].quantity}`
+        text: `Купить: ${total}`
       })
     }
 
@@ -51,12 +54,16 @@ export default function ProductList() {
       setAddedItems(cart)
     }
     
+    let total = 0
+    for(let i in cart) {
+      total += i[quantity]
+    }
     if (cart.length === 0) {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить: ${cart.quantity}`
+        text: `Купить: ${total}`
       })
     }
   }
