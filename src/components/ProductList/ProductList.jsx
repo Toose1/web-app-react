@@ -3,12 +3,12 @@ import Card from "../Card/Card"
 import { useTelegram } from "../../hooks/useTelegram"
 
 const products = [
-  {id: 1, title: "Cookie", price: 200, description: "We'll save your cookies ;)"},
-  {id: 2, title: "Donut", price: 150, description: "Donut but not ancient map position"},
-  {id: 3, title: "Icecream with caramel", price: 160, description: "ice baby"},
-  {id: 4, title: "Pizza", price: 990, description: "mamma mia pizza deliziosa"},
-  {id: 5, title: "Taco", price: 699, description: "52 52 52"},
-  {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store"}
+  {id: 1, title: "Cookie", price: 200, description: "We'll save your cookies ;)", image: "src/media/cookie.png"},
+  {id: 2, title: "Donut", price: 150, description: "Donut but not ancient map position", image: "src/media/cookie.png"},
+  {id: 3, title: "Icecream with caramel", price: 160, description: "ice baby", image: "src/media/cookie.png"},
+  {id: 4, title: "Pizza", price: 990, description: "mamma mia pizza deliziosa", image: "src/media/cookie.png"},
+  {id: 5, title: "Taco", price: 699, description: "52 52 52", image: "src/media/cookie.png"},
+  {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store", image: "src/media/cookie.png"}
 ]
 
 function sumOfQuantity(items) {
