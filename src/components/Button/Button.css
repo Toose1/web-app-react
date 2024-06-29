@@ -57,6 +57,7 @@
   background-color: #195906;
   transform: scale(0.9);
 }
-/* .decrease:active, .increase:active {
-  transform: scale(0.9); 
-} */
+.decrease:active, .increase:active {
+  background-color: #ffffff;
+  transform: scale(1); 
+}
