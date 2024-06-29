@@ -26,8 +26,8 @@
   background-color: #28a745; /* Green */
 }
 
-.add:hover {
-  background-color: #218838; /* Darker green */
+.add:active {
+  background-color: #218838; 
   transform: scale(1);
 }
 
