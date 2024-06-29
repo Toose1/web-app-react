@@ -21,11 +21,12 @@ function Card({item, onAdd, onRemove}) {
         <div className='card'>
             <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
 
-            <div className={"card__title"}>{item.title}</div>
-            <div className={"card__description"}>{item.description}</div>
-            <div className={"card__price"}>
-                <span>Стоимость: <b>{item.price}</b></span>
+            <div className={"card__title"}>
+                {item.title}• $<div className={"card__price"}>
+                    <span><b>{item.price}</b></span>
+                </div>
             </div>
+            <div className={"card__description"}>{item.description}</div>
              
             <div className="btn-container">
                 {
