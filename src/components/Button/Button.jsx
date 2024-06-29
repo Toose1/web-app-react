@@ -7,9 +7,9 @@ export default function Button({type, disable, title, onClick}) {
             <button
                 className={`btn ${
                     (type === "add" && "add") ||
-                    (type === "incr" && "incr") ||
+                    (type === "increase" && "increase") ||
                     (type === "remove" && "remove") ||
-                    (type === "dicr" && "dicr") ||
+                    (type === "decrease" && "decrease") ||
                     (type === "checkout" && "checkout") 
                 }`}
                 disabled={disable}

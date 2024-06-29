@@ -28,11 +28,11 @@
   transform: scale(1.05);
 }
 
-.dicr, .incr {
-  background-color: #52440a; 
-  /* width: 40px;
+.decrease {
+  background-color: #93230d; 
+  width: 40px;
   height: 40px;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -41,11 +41,15 @@
   border-radius: 10px;  */
 }
 
-.dicr:hover, .incr:hover {
-  background-color: #151001; /* Darker yellow */
-  transform: scale(1.1);
+.increase {
+  background-color: #207307;
 }
 
-.dicr:active, .incr:active {
-  transform: scale(0.9); /* Уменьшаем размер при нажатии */
+.decrease:hover, .increase:hover {
+  background-color: #151001; 
+  transform: scale(0.9);
 }
+
+/* .decrease:active, .increase:active {
+  transform: scale(0.9); 
+} */
