@@ -28,7 +28,7 @@
   transform: scale(1.05);
 }
 
-.remove-dicr, .add-incr {
+.dicr, .incr {
   background-color: #ffc107; /* Yellow */
   width: 40px;
   height: 40px;
@@ -41,12 +41,12 @@
   border-radius: 10px; /* Rounded corners */
 }
 
-.remove-dicr:hover, .add-incr:hover {
+.dicr:hover, .incr:hover {
   background-color: #e0a800; /* Darker yellow */
   transform: scale(1.1);
 }
 
-.remove-dicr:active, .add-incr:active {
+.dicr:active, .incr:active {
   transform: scale(0.9); /* Уменьшаем размер при нажатии */
 }
 
@@ -60,10 +60,10 @@
   display: flex;
 }
 
-.quantity-buttons .decrease {
+.quantity-buttons .dicr {
   left: -30px; /* Closer to the center */
 }
 
-.quantity-buttons .increase {
+.quantity-buttons .incr {
   right: -30px; /* Closer to the center */
 }

@@ -3,13 +3,13 @@ import "./Button.css"
 
 export default function Button({type, disable, title, onClick}) {
     return (
-        <div>
+        <div className="quantity-buttons">
             <button
                 className={`btn ${
                     (type === "add" && "add") ||
-                    (type === "add-incr" && "add-incr") ||
+                    (type === "incr" && "incr") ||
                     (type === "remove" && "remove") ||
-                    (type === "remove-dicr" && "remove-dicr") ||
+                    (type === "dicr" && "dicr") ||
                     (type === "checkout" && "checkout") 
                 }`}
                 disabled={disable}
