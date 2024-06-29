@@ -4,12 +4,11 @@
     justify-content: space-between;
     width: 150px;
     height: 250px;
-    border: 2px solid tomato;
-    background-color: #343432;
+    background-color: #1c1c1c;
     padding: 0.5rem 0.3rem;
     margin: 13px 10px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .card__title {
