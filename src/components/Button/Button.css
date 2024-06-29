@@ -28,7 +28,7 @@
 
 .add:active {
   background-color: #1b702e; 
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 .decrease {
@@ -54,12 +54,12 @@
 } */
 .decrease:active {
   background-color: #701b0a; 
-  transform: scale(1); 
+  transform: scale(1.2); 
 }
 
 .increase:active {
   background-color: #195906;
-  transform: scale(1); 
+  transform: scale(1.2); 
 }
 
 
