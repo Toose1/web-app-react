@@ -28,7 +28,7 @@
   transform: scale(1.05);
 }
 
-.decrease, .increase {
+.remove-dicr, .add-incr {
   background-color: #ffc107; /* Yellow */
   width: 40px;
   height: 40px;
@@ -41,12 +41,12 @@
   border-radius: 10px; /* Rounded corners */
 }
 
-.decrease:hover, .increase:hover {
+.remove-dicr:hover, .add-incr:hover {
   background-color: #e0a800; /* Darker yellow */
   transform: scale(1.1);
 }
 
-.decrease:active, .increase:active {
+.remove-dicr:active, .add-incr:active {
   transform: scale(0.9); /* Уменьшаем размер при нажатии */
 }
 
