@@ -43,11 +43,14 @@
 
 .increase {
   background-color: #207307;
+  width: 50px;
+  height: 35px;
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.3s ease;
 }
 
 .decrease:hover, .increase:hover {
   background-color: #151001; 
-  transform: scale(0.9);
+  /* transform: scale(0.9); */
 }
 
 /* .decrease:active, .increase:active {
