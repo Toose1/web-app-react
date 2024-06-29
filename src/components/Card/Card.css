@@ -13,8 +13,7 @@
 .card__title {
     font-weight: 400;
     text-align: center;
-    padding-top: 100%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .btn-container {
