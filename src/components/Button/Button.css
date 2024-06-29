@@ -27,7 +27,7 @@
 }
 
 .add:active {
-  background-color: #218838; 
+  background-color: #1b702e; 
   transform: scale(1);
 }
 
@@ -35,14 +35,14 @@
   background-color: #93230d; 
   width: 50px;
   height: 35px;
-  transition: opacity 0.5s ease, transform 0.3s ease, background-color 0.3s ease;
+  transition: opacity 0.5s ease, transform 0.2s ease, background-color 0.3s ease;
 }
 
 .increase {
   background-color: #207307;
   width: 50px;
   height: 35px;
-  transition: opacity 0.5s ease, transform 0.3s ease, background-color 0.3s ease;
+  transition: opacity 0.5s ease, transform 0.2s ease, background-color 0.3s ease;
 }
 
 /* .decrease:hover {
