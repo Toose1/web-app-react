@@ -54,12 +54,12 @@
 } */
 .decrease:active {
   background-color: #701b0a; 
-  transform: scale(0.9); 
+  transform: scale(0.5); 
 }
 
 .increase:active {
   background-color: #195906;
-  transform: scale(0.9); 
+  transform: scale(0.5); 
 }
 
 
