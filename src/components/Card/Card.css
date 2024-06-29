@@ -14,6 +14,7 @@
 .card__title {
     font-weight: 600;
     text-align: center;
+    background-color: blue;
 }
 
 .btn-container {
@@ -26,4 +27,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.card__price {
+    background-color: blue;
 }
