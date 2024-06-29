@@ -27,7 +27,7 @@
 }
 
 .add:active {
-  background-color: #1b702e; 
+  background-color: #164d05;
   transform: scale(0.9);
 }
 
@@ -53,12 +53,12 @@
   background-color: #195906;
 } */
 .decrease:active {
-  background-color: #701b0a; 
+  background-color: #631809; 
   transform: scale(0.97); 
 }
 
 .increase:active {
-  background-color: #195906;
+  background-color: #164d05;
   transform: scale(0.97); 
 }
 
