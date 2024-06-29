@@ -20,11 +20,10 @@ function Card({item, onAdd, onRemove}) {
     return (
         <div className='card'>
             <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
-
-            <div className="btn-container">
-                <div className={"card__title"}>
+            <div className={"card__title"}>
                     {item.title} • ₽<span><b>{item.price}</b></span>
-                </div>
+            </div>
+            <div className="btn-container">
                 {
                     count === 0 ? 
                     <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
