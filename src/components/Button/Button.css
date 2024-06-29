@@ -45,14 +45,18 @@
   background-color: #207307;
   width: 50px;
   height: 35px;
-  transition: opacity 0.5s ease, transform 0.5s ease, background-color 1s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.3s ease;
 }
 
-.decrease:hover, .increase:hover {
-  background-color: #ccc8bb; 
-  /* transform: scale(0.9); */
+.decrease:hover {
+  background-color: #701b0a;  
+  transform: scale(0.9);
 }
 
+.increase:hover {
+  background-color: #195906;
+  transform: scale(0.9);
+}
 /* .decrease:active, .increase:active {
   transform: scale(0.9); 
 } */
