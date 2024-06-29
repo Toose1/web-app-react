@@ -32,8 +32,8 @@ function Card({item, onAdd, onRemove}) {
                     count === 0 ? 
                     <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
                     <div className='container'>
-                        <Button title={"+"} type={"add"} disable={false} onClick={addItem}/>
                         <Button title={"-"} type={"incr"} disable={false} onClick={removeItem}/>
+                        <Button title={"+"} type={"add"} disable={false} onClick={addItem}/>
                     </div>
                 }
             </div>
