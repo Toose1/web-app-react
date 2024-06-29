@@ -49,21 +49,3 @@
 .dicr:active, .incr:active {
   transform: scale(0.9); /* Уменьшаем размер при нажатии */
 }
-
-.quantity-buttons {
-  display: none;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.quantity-buttons.show {
-  display: flex;
-}
-
-.quantity-buttons .dicr {
-  left: -30px; /* Closer to the center */
-}
-
-.quantity-buttons .incr {
-  right: -30px; /* Closer to the center */
-}

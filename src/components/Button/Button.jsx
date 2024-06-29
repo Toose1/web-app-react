@@ -3,7 +3,7 @@ import "./Button.css"
 
 export default function Button({type, disable, title, onClick}) {
     return (
-        <div className="quantity-buttons">
+        <div>
             <button
                 className={`btn ${
                     (type === "add" && "add") ||
