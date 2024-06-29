@@ -22,9 +22,7 @@ function Card({item, onAdd, onRemove}) {
             <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
 
             <div className={"card__title"}>
-                {item.title}• $<div className={"card__price"}>
-                    <span><b>{item.price}</b></span>
-                </div>
+                {item.title} • $<span><b>{item.price}</b></span>
             </div>
             <div className={"card__description"}>{item.description}</div>
              
