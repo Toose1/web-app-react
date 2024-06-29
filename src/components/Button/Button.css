@@ -29,7 +29,7 @@
 }
 
 .dicr, .incr {
-  background-color: #353430; 
+  background-color: #52440a; 
   /* width: 40px;
   height: 40px;
   display: flex;
@@ -42,7 +42,7 @@
 }
 
 .dicr:hover, .incr:hover {
-  background-color: #615e55; /* Darker yellow */
+  background-color: #151001; /* Darker yellow */
   transform: scale(1.1);
 }
 
