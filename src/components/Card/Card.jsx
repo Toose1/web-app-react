@@ -20,6 +20,9 @@ function Card({item, onAdd, onRemove}) {
     return (
         <div className='card'>
             <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
+            <div className="image__container">
+                <img src=''/>
+            </div>
             <div className={"card__title"}>
                     {item.title} • ₽<span><b>{item.price}</b></span>
             </div>
