@@ -26,21 +26,21 @@ function Card({item, onAdd, onRemove}) {
                 </div>
             </div>
 
-            <div className="card_bottom">
-                <div className={"card__title"}>
-                    {item.title} • ₽<span><b>{item.price}</b></span>
-                </div>
-                <div className="btn-container">
-                    {
-                    count === 0 ? 
-                    <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
-                    <div className='container'>
-                        <Button title={"-"} type={"decrease"} disable={false} onClick={removeItem}/>
-                        <Button title={"+"} type={"increase"} disable={false} onClick={addItem}/>
-                    </div>
-                    }
-                </div>
+    
+            <div className={"card__title"}>
+                {item.title} • ₽<span><b>{item.price}</b></span>
             </div>
+            <div className="btn-container">
+                {
+                count === 0 ? 
+                <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
+                <div className='container'>
+                    <Button title={"-"} type={"decrease"} disable={false} onClick={removeItem}/>
+                    <Button title={"+"} type={"increase"} disable={false} onClick={addItem}/>
+                </div>
+                }
+            </div>
+            
 
         </div>
     )
