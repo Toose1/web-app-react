@@ -47,18 +47,18 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(41, 42, 42);
     border-radius: 50%;
-    transform: translate(20px, -20px) scale(1);
     text-align: center;
     border: 1px solid;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+    transform: scale(0.9);
+    /* transition: all 0.3s ease; */
     /* animation: scaleanimation 1s ease infinite; */
 }
 
