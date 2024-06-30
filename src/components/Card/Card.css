@@ -15,12 +15,10 @@
     flex: 0 0 120px;
 }
 
-.card__title {
-    margin-bottom: 15px;
-}
 
 .card__title {
     font-weight: 400;
+    margin-bottom: 15px;
     justify-content: space-around;
 }
 
