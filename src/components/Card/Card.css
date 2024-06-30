@@ -15,8 +15,8 @@
     flex: 0 0 120px;
 }
 
-.card_bottom.card__title {
-    padding-bottom: 15px;
+.card__title {
+    margin-bottom: 15px;
 }
 
 .card__title {
