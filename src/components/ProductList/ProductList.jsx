@@ -70,7 +70,7 @@ export default function ProductList() {
     
   return (
     <>
-      <div className="cards">
+      <div className="cards__container">
         {products.map(item => (
           <Card item={item} onAdd={onAdd} onRemove={onRemove}/>
           ))}
