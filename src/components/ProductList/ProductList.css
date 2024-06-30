@@ -1,7 +1,14 @@
 
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
-.cards__container {
+.container__cards {
     display: grid;
-    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 160px);
 }
 
