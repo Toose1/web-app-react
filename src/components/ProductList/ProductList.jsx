@@ -5,7 +5,7 @@ import img_cookie from "../media/cookie.png"
 
 const products = [
   {id: 1, title: "Cookie", price: 200, description: "We'll save your cookies ;)", image: img_cookie},
-  {id: 2, title: "Donut", price: 150, description: "Donut but not ancient map position", image: },
+  {id: 2, title: "Donut", price: 150, description: "Donut but not ancient map position", image: img_cookie},
   {id: 3, title: "Icecream with caramel", price: 160, description: "ice baby", image: img_cookie},
   {id: 4, title: "Pizza", price: 990, description: "mamma mia pizza deliziosa", image: img_cookie},
   {id: 5, title: "Taco", price: 699, description: "52 52 52", image: img_cookie},
