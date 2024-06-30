@@ -42,7 +42,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `В корзине: ${sumOfQuantity(cart)}`
+        text: `Показать корзину`
       })
     }
 
@@ -64,7 +64,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `В корзине: ${sumOfQuantity(cart)}`
+        text: `Показать корзину`
       })
     }
   }
