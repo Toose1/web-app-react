@@ -57,15 +57,15 @@
     justify-content: center;
     align-items: center;
     transform: scale(0.9);
-    /* transition: all 0.3s ease; */
-    /* animation: scaleanimation 1s ease infinite; */
+    transition: all 0.3s ease;
+    animation: scaleanimation 1s ease infinite;
 }
 
-/* @keyframes scaleanimation {
+@keyframes scaleanimation {
     to{
         transform: translate(20px, -20px) scale(1.05);
     }
-} */
+} 
 
 .card_badge--hidden {
     display: none;
