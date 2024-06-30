@@ -15,9 +15,8 @@
     flex: 0 0 120px;
 }
 
-.card_bottom {
-    flex: 1 0 auto;
-    align-items: flex-end;
+.card_bottom.card__title {
+    margin-bottom: 15px;
 }
 
 .card__title {
