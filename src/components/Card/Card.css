@@ -28,13 +28,13 @@
     justify-content: space-around;
 }
 
-.image_container {
+.image__container {
     width: 100px;
     height: 100px;
     margin: 0 auto;
 }
 
-.image_container img {
+.image__container img {
     width: 100%;
     object-fit: cover;
 }
