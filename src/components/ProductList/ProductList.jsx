@@ -73,7 +73,9 @@ export default function ProductList() {
     <>
       <div className="cards__container">
         {products.map(item => (
-          <Card item={item} onAdd={onAdd} onRemove={onRemove}/>
+          <div className="card" key={item.id}>
+            <Card item={item} onAdd={onAdd} onRemove={onRemove} />
+          </div>
           ))}
       </div>
     </>
