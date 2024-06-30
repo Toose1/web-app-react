@@ -1,4 +1,4 @@
-.cards__container {
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
