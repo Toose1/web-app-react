@@ -2,6 +2,7 @@ import { useState } from "react"
 import Card from "../Card/Card"
 import { useTelegram } from "../../hooks/useTelegram"
 import img_cookie from "../media/cookie.png"
+import "./ProductList.css";
 
 const products = [
   {id: 1, title: "Cookie", price: 200, description: "We'll save your cookies ;)", image: img_cookie},
