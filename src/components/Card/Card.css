@@ -72,9 +72,9 @@
 .card-more-overlay {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
     background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
     display: flex;
     justify-content: center;
