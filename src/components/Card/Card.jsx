@@ -5,6 +5,7 @@ import ButtonRef from "../ButtonRef/ButtonRef"
 
 function Card({item, onAdd, onRemove}) {
     const [count, setCount] = useState(0)
+    const [moreInfo, setMoreInfo] = useState(false)
 
     const addItem = () => {
         setCount(count+1)
@@ -18,12 +19,24 @@ function Card({item, onAdd, onRemove}) {
         
     }
 
+    const onActive = () => {
+        setMoreInfo(true)
+        console.log(`${item.title}`)
+    }
+
+    const onDisactive = () => {
+        setMoreInfo(false)
+    }
+
     return (
         <div className='card'>
             <div className="card_top">
                 <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
                 <div className="image__container">
-                    <ButtonRef item={item} onClick={() => console.log(`go ~${item.title}`)}/>
+                    {
+                        moreInfo === false ? <ButtonRef item={item} onClick={onActive}/> :
+                        <Button title={"БЕЕБЕББ"} type={"increase"} disable={false} onClick={onDisactive}/>
+                    }
                 </div>
             </div>
 
