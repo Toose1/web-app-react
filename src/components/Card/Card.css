@@ -72,7 +72,7 @@
 .card-more-overlay {
     position: fixed;
     top: 180px;
-    left: 80%;
+    left: 10%;
     width: 350px;
     height: 300px;
     display: flex;
