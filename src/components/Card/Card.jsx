@@ -35,8 +35,7 @@ function Card({item, onAdd, onRemove}) {
                 <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
                 <div className="image__container">
                     {
-                        moreInfo === false ? <ButtonRef item={item} onClick={onActive}/> :
-                        <CardMore item={item} onClick={onDisactive}/>
+                        <ButtonRef item={item} onClick={onActive}/>
                     }
                 </div>
             </div>
@@ -55,8 +54,6 @@ function Card({item, onAdd, onRemove}) {
                 </div>
                 }
             </div>
-            
-
         </div>
     )
 }
