@@ -5,9 +5,15 @@ export default function CardMore({item, onClick}) {
     return (
         <>
             <div className="card__info">
-                {item.title}
-                {item.description}
-                {item.price}
+                <div>
+                    {item.title}
+                </div>
+                <div>
+                    {item.description}
+                </div>
+                <div>
+                    {item.price}
+                </div>
             </div>
         </>
     )
