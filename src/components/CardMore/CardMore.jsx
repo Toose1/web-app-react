@@ -14,6 +14,7 @@ export default function CardMore({item, onClick}) {
                 <div>
                     {item.price}
                 </div>
+                <button onClick={onClick}></button>
             </div>
         </>
     )
