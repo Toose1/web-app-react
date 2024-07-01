@@ -5,7 +5,7 @@ export default function CardMore({item, onClick}) {
     return (
         <>
             <div className="card__info">
-                Информация
+                {item.title}
             </div>
         </>
     )

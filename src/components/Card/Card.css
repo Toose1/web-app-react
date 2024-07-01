@@ -71,10 +71,10 @@
 
 .card-more-overlay {
     position: fixed;
-    top: 150px;
+    top: 130px;
     left: 5%;
     width: 350px;
-    height: 300px;
+    height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
