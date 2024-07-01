@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Button from '../Button/Button'
 import "./Card.css"
 import ButtonRef from "../ButtonRef/ButtonRef"
+import CardMore from '../CardMore/CardMore'
 
 function Card({item, onAdd, onRemove}) {
     const [count, setCount] = useState(0)
@@ -35,7 +36,7 @@ function Card({item, onAdd, onRemove}) {
                 <div className="image__container">
                     {
                         moreInfo === false ? <ButtonRef item={item} onClick={onActive}/> :
-                        <Button title={"БЕЕБЕББ"} type={"increase"} disable={false} onClick={onDisactive}/>
+                        <CardMore item={item} onClick={onDisactive}/>
                     }
                 </div>
             </div>
