@@ -1,9 +1,8 @@
 .card__info {
-    position: absolute;
     top: 0;
     right: 0;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: tomato;
     border-radius: 20%;
 }
