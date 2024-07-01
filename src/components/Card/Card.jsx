@@ -34,26 +34,28 @@ function Card({item, onAdd, onRemove}) {
             <div className="card_top">
                 <span className={`${count !== 0 ? "card_badge" : "card_badge--hidden"}`}>{count}</span>
                 <div className="image__container">
-                    {
-                        <ButtonRef item={item} onClick={onActive}/>
-                    }
+                    <ButtonRef item={item} onClick={onActive} />
                 </div>
             </div>
 
-    
             <div className={"card__title"}>
                 {item.title} • ₽<span><b>{item.price}</b></span>
             </div>
             <div className="btn-container">
-                {
-                count === 0 ? 
-                <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem}/> :
-                <div className='container'>
-                    <Button title={"-"} type={"decrease"} disable={false} onClick={removeItem}/>
-                    <Button title={"+"} type={"increase"} disable={false} onClick={addItem}/>
-                </div>
+                {count === 0 ? 
+                    <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem} /> :
+                    <div className='container'>
+                        <Button title={"-"} type={"decrease"} disable={false} onClick={removeItem} />
+                        <Button title={"+"} type={"increase"} disable={false} onClick={addItem} />
+                    </div>
                 }
             </div>
+
+            {moreInfo && (
+                <div className="card-more-overlay">
+                    <CardMore item={item} onClose={onDisactive} />
+                </div>
+            )}
         </div>
     )
 }
