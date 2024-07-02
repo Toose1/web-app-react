@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import "./TgButton.css"
 
 function TgButton({item, onAdd, onRemove}) {
-    const [showButtons, setShowButtons] = useState(false)
+    const [showButtons, setShowButtons] = useState(false);
 
     const handleToggleButtons = () => {
-        setShowButtons(!showButtons)
+        setShowButtons(!showButtons);
     };
 
     return (
@@ -36,7 +36,7 @@ function TgButton({item, onAdd, onRemove}) {
             )}
         </div>
         </div>
-    )
+    );
 }
 
 export default TgButton
