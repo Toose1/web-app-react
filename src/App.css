@@ -42,8 +42,6 @@
 } */
 
 
-/* Import Tailwind CSS */
-@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
 
 .flip-card {
   perspective: 1000px;
