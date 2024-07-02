@@ -6,12 +6,21 @@ import ProductList from './components/ProductList/ProductList'
 import TgButton from './components/TgButton/TgButton'
 
 export default function App() {
+  const {tg} = useTelegram()
+  
+  useEffect(() => {
+    tg.expand()
+  }, [])
+  
+
   return (
-    <div className='App'>
-      <Routes>
-        {/* <Route index element={<ProductList />}/> */}
-        <Route index element={<TgButton />}/>
-      </Routes>
+    <>
+      <div className='App'>
+        <Routes>
+          {/* <Route index element={<ProductList />}/> */}
+          <Route index element={<TgButton />}/>
+        </Routes>
     </div>
+    </>
   )
 }
