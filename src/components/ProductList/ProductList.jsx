@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Card from "../Card/Card"
+import CardItem from "../CardItem/CardItem"
 import { useTelegram } from "../../hooks/useTelegram"
 import img_cookie from "../media/cookie.png"
 import "./ProductList.css";
@@ -74,7 +74,7 @@ export default function ProductList() {
       <section className="cards">
         <div className="container container__cards">
           {products.map(item => (
-            <Card item={item} onAdd={onAdd} onRemove={onRemove} />
+            <CardItem item={item} onAdd={onAdd} onRemove={onRemove} />
           ))}
         </div>
       </section>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from '../Button/Button'
-import "./Card.css"
+import "./CardItem.css"
 import ButtonRef from "../ButtonRef/ButtonRef"
 import CardMore from '../CardMore/CardMore'
 import UniButton from '../UniButton/UniButton'
@@ -13,7 +13,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 
-function Card({item, onAdd, onRemove}) {
+function CardItem({item, onAdd, onRemove}) {
     const [count, setCount] = useState(0)
 
     const addItem = () => {
@@ -48,17 +48,11 @@ function Card({item, onAdd, onRemove}) {
                     </CardContent>
                 </CardActionArea>
             </Card>
-            <div className="btn-container">
-                {count === 0 ?
-                <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
-                <GroupButton onRemove={removeItem} onAdd={addItem} />
-                }
-            </div>
         </>
     )
 }
 
-export default Card
+export default CardItem
 
 
 
