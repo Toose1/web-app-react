@@ -30,7 +30,7 @@ function CardItem({item, onAdd, onRemove}) {
 
     return (
         <>
-            <Card sx={{ maxWidth: 200, display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+            <Card sx={{ maxWidth: 200, display: "flex", flexDirection: "column", justifyContent: "space-between", p: "0.4rem 0.4rem"}}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
@@ -38,12 +38,12 @@ function CardItem({item, onAdd, onRemove}) {
                         image={item.image}
                         alt="green iguana"
                     />
-                    <CardContent sx={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+                    <CardContent sx={{p: "3px"}}>
                         <Typography gutterBottom variant="h6" component="div">
                             {item.title}
                         </Typography>
                     </CardContent>
-                    <CardContent>
+                    <CardContent sx={{p: "3px"}}>
                         <Typography variant="body2" color="text.secondary">
                             {item.description}
                         </Typography>
