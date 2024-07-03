@@ -38,13 +38,13 @@ function CardItem({item, onAdd, onRemove}) {
                         image={item.image}
                         alt="green iguana"
                     />
-                    <CardContent>
-                        <Typography gutterBottom variant="h7" component="div" p={3}>
+                    <CardContent sx={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+                        <Typography gutterBottom variant="h7" component="div">
                             {item.title}
                         </Typography>
                     </CardContent>
                     <CardContent>
-                        <Typography variant="body2" color="text.secondary" p={3}>
+                        <Typography variant="body2" color="text.secondary">
                             {item.description}
                         </Typography>
                     </CardContent>
