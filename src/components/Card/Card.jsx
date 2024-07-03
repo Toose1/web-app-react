@@ -4,6 +4,7 @@ import "./Card.css"
 import ButtonRef from "../ButtonRef/ButtonRef"
 import CardMore from '../CardMore/CardMore'
 import UniButton from '../UniButton/UniButton'
+import GroupButton from '../GroupButton/GroupButton'
 
 
 function Card({item, onAdd, onRemove}) {
@@ -46,10 +47,11 @@ function Card({item, onAdd, onRemove}) {
             <div className="btn-container">
                 {count === 0 ?
                     <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
-                    <div className='container'>
-                        <UniButton title={"-"} onClick={removeItem} sx={{width: "20px"}}/>
-                        <UniButton title={"+"} onClick={addItem} sx={{width: "20px"}}/>
-                    </div>
+                    <GroupButton onRemove={removeItem} onAdd={addItem} />
+                    // <div className='container'>
+                    //     <UniButton title={"-"} onClick={removeItem} sx={{width: "20px"}}/>
+                    //     <UniButton title={"+"} onClick={addItem} sx={{width: "20px"}}/>
+                    // </div>
                 }
             </div>
 
