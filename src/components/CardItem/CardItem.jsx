@@ -34,11 +34,11 @@ function CardItem({item, onAdd, onRemove}) {
                 <CardActionArea>
                     <CardMedia
                         component="img"
-                        height="180"
+                        height="140"
                         image={item.image}
                         alt="green iguana"
                     />
-                    <CardContent>
+                    <CardContent >
                         <Typography gutterBottom variant="h6" component="div">
                             {item.title}
                         </Typography>
