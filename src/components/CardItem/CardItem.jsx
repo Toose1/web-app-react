@@ -38,10 +38,12 @@ function CardItem({item, onAdd, onRemove}) {
                         image={item.image}
                         alt="green iguana"
                     />
-                    <CardContent >
+                    <CardContent>
                         <Typography gutterBottom variant="h6" component="div">
                             {item.title}
                         </Typography>
+                    </CardContent>
+                    <CardContent>
                         <Typography variant="body2" color="text.secondary">
                             {item.description}
                         </Typography>
