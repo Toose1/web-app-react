@@ -11,7 +11,11 @@ export default function App() {
     tg.expand()
   }, [])
   
- 
+  tg.onEvent("mainButtonClicked", () => {
+    tg.MainButton.setParams({
+      text: `Пizda`
+    })
+  })
 
   return (
     <>
