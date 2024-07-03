@@ -5,12 +5,12 @@ import img_cookie from "../media/cookie.png"
 import "./ProductList.css";
 
 const products = [
-  {id: 1, title: "Cookie", price: 200, description: "We'll save your cookies ;)", image: img_cookie},
-  {id: 2, title: "Donut", price: 150, description: "Donut but not ancient map position", image: img_cookie},
-  {id: 3, title: "Icecream with caramel", price: 160, description: "ice baby", image: img_cookie},
-  {id: 4, title: "Pizza", price: 990, description: "mamma mia pizza deliziosa", image: img_cookie},
-  {id: 5, title: "Taco", price: 699, description: "52 52 52", image: img_cookie},
-  {id: 6, title: "Burger", price: 900, description: "Burger but not Gucci store", image: img_cookie}
+  {id: 1, title: "Donate package 1", price: 49, description: "We'll save your cookies ;)", image: img_cookie},
+  {id: 2, title: "Donate package 2", price: 99, description: "Donut but not ancient map position", image: img_cookie},
+  {id: 3, title: "Donate package 3", price: 149, description: "ice baby", image: img_cookie},
+  {id: 4, title: "Donate package 4", price: 199, description: "mamma mia pizza deliziosa", image: img_cookie},
+  {id: 5, title: "Donate package 5", price: 299, description: "52 52 52", image: img_cookie},
+  {id: 6, title: "Donate package 6", price: 499, description: "Burger but not Gucci store", image: img_cookie}
 ]
 
 function sumOfQuantity(items) {
