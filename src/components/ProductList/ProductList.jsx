@@ -23,7 +23,7 @@ function sumOfQuantity(items) {
 }
 
 export default function ProductList() {
-  const[current, setCurrent] = useState("ProductList")
+  const [current, setCurrent] = useState("ProductList")
   const [addedItems, setAddedItems] = useState([])
   const {tg} = useTelegram()
 
