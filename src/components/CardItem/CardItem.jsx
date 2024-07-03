@@ -38,7 +38,7 @@ function CardItem({item, onAdd, onRemove}) {
                         image={item.image}
                         alt="green iguana"
                     />
-                    <CardContent sx={{p: "0px", color: "white"}}>
+                    <CardContent sx={{p: "3px", color: "white"}}>
                         <Typography variant="body2" component="div">
                         <b>{item.title}</b>
                         </Typography>
@@ -48,13 +48,13 @@ function CardItem({item, onAdd, onRemove}) {
                             {item.price}₽
                         </Typography>
                     </CardContent>
-                    <CardContent sx={{justifyContent: "space-between"}}>
-                        {count === 0 ?
-                            <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
-                            <GroupButton onRemove={removeItem} onAdd={addItem} />
-                        }
-                    </CardContent>
                 </CardActionArea>
+                <CardContent sx={{display: "flex", justifyContent: "space-between"}}>
+                    {count === 0 ?
+                        <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
+                        <GroupButton onRemove={removeItem} onAdd={addItem} />
+                    }
+                </CardContent>
             </Card>
         </>
     )
