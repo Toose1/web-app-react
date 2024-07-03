@@ -80,16 +80,13 @@ export default function ProductList() {
   return (
     <>
     {
-      current ? "ProductList" (
-        <section className="cards">
-          <div className="container container__cards">
-            {products.map(item => (
-              <CardItem item={item} onAdd={onAdd} onRemove={onRemove} />
-            ))}
-          </div>
+      <section className="cards">
+        <div className="container container__cards">
+          {products.map(item => (
+            <CardItem item={item} onAdd={onAdd} onRemove={onRemove} />
+          ))}
+        </div>
       </section>
-      ) : <ConfirimForm />
-      
     } 
     </>
   )
