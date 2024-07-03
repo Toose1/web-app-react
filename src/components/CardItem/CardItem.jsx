@@ -48,13 +48,13 @@ function CardItem({item, onAdd, onRemove}) {
                             {item.price}₽
                         </Typography>
                     </CardContent>
+                    <CardContent>
+                        {count === 0 ?
+                            <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
+                            <GroupButton onRemove={removeItem} onAdd={addItem} />
+                        }
+                    </CardContent>
                 </CardActionArea>
-                <div className="btn-container">
-                    {count === 0 ?
-                    <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
-                    <GroupButton onRemove={removeItem} onAdd={addItem} />
-                    }
-                </div>
             </Card>
         </>
     )
