@@ -3,10 +3,10 @@ import CardItem from "../CardItem/CardItem"
 import { useTelegram } from "../../hooks/useTelegram"
 import img_cookie from "../media/cookie.png"
 import "./ProductList.css";
-import ConfirimForm from './components/ConfirimForm/ConfirimForm'
+import ConfirimForm from "../ConfirimForm/ConfirimForm";
 
 const products = [
-  {id: 1, title: "Donate package 1", price: 49, description: "We'll save your cookies ;)", image: img_cookie},
+  {id: 1, title: "Donate package 1", price: 69, description: "We'll save your cookies ;)", image: img_cookie},
   {id: 2, title: "Donate package 2", price: 99, description: "Donut but not ancient map position", image: img_cookie},
   {id: 3, title: "Donate package 3", price: 149, description: "ice baby", image: img_cookie},
   {id: 4, title: "Donate package 4", price: 199, description: "mamma mia pizza deliziosa", image: img_cookie},
@@ -74,15 +74,15 @@ export default function ProductList() {
     
   return (
     <>
-    {
-      <section className="cards">
-        <div className="container container__cards">
-          {products.map(item => (
-            <CardItem item={item} onAdd={onAdd} onRemove={onRemove} />
-          ))}
-        </div>
-      </section>
-    } 
+      {
+        <section className="cards">
+          <div className="container container__cards">
+            {products.map(item => (
+              <CardItem item={item} onAdd={onAdd} onRemove={onRemove} />
+            ))}
+          </div>
+        </section>
+      } 
     </>
   )
 }
