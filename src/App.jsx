@@ -20,9 +20,9 @@ export default function App() {
   return (
     <>
       <div className='App'>
-      <Routes>
-        <Route index element={<ProductList />}/>
-      </Routes>
+        <Routes>
+          <Route index element={<ProductList />}/>
+        </Routes>
       </div>
     </>
   )
