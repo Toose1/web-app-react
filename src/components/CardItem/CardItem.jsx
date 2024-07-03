@@ -43,13 +43,13 @@ function CardItem({item, onAdd, onRemove}) {
                             <b>{item.title}</b>
                         </Typography>
                     </CardContent>
-                    <CardContent sx={{p: "3px", color: "white"}}>
+                    <CardContent sx={{p: "3px", color: "white", justifyContent: "flex-end"}}>
                         <Typography variant="body2">
                             {item.price}₽
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CardContent>
+                <CardContent sx={{p: "0px"}}>
                     <div className="btn-container">
                         {count === 0 ?
                             <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
