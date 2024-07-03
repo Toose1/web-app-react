@@ -6,7 +6,7 @@ function ConfirimForm() {
 
     return (
       <>
-      <h1>Form</h1>
+        <h1>Form</h1>
       </>
     )
 }
