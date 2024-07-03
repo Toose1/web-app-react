@@ -3,7 +3,6 @@ import './App.css'
 import { useTelegram } from './hooks/useTelegram'
 import { Route, Routes } from 'react-router-dom'
 import ProductList from './components/ProductList/ProductList'
-import TgButton from './components/TgButton/TgButton'
 
 export default function App() {
   const {tg} = useTelegram()
@@ -16,10 +15,9 @@ export default function App() {
   return (
     <>
       <div className='App'>
-        {/* <Routes>
+        <Routes>
           <Route index element={<ProductList />}/>
-        </Routes> */}
-        <TgButton/>
+        </Routes>
       </div>
     </>
   )

@@ -3,6 +3,8 @@ import Button from '../Button/Button'
 import "./Card.css"
 import ButtonRef from "../ButtonRef/ButtonRef"
 import CardMore from '../CardMore/CardMore'
+import UniButton from '../UniButton/UniButton'
+
 
 function Card({item, onAdd, onRemove}) {
     const [count, setCount] = useState(0)
@@ -42,11 +44,11 @@ function Card({item, onAdd, onRemove}) {
                 {item.title} • ₽<span><b>{item.price}</b></span>
             </div>
             <div className="btn-container">
-                {count === 0 ? 
-                    <Button title={"Добавить"} type={"add"} disable={false} onClick={addItem} /> :
+                {count === 0 ?
+                    <UniButton title={"ADD"} onClick={addItem}/> :
                     <div className='container'>
-                        <Button title={"-"} type={"decrease"} disable={false} onClick={removeItem} />
-                        <Button title={"+"} type={"increase"} disable={false} onClick={addItem} />
+                        <UniButton title={"-"} onClick={removeItem}/>
+                        <UniButton title={"+"} onClick={addItem}/>
                     </div>
                 }
             </div>
