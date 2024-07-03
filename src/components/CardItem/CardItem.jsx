@@ -40,7 +40,7 @@ function CardItem({item, onAdd, onRemove}) {
                     />
                     <CardContent sx={{p: "3px", color: "white"}}>
                         <Typography variant="body2" component="div">
-                        <b>{item.title}</b>
+                            <b>{item.title}</b>
                         </Typography>
                     </CardContent>
                     <CardContent sx={{p: "3px", color: "white"}}>
