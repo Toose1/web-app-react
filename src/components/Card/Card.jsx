@@ -47,8 +47,8 @@ function Card({item, onAdd, onRemove}) {
                 {count === 0 ?
                     <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
                     <div className='container'>
-                        <UniButton title={"-"} onClick={removeItem} sx={{width: "50px"}}/>
-                        <UniButton title={"+"} onClick={addItem} sx={{width: "50px"}}/>
+                        <UniButton title={"-"} onClick={removeItem} sx={{width: "20px"}}/>
+                        <UniButton title={"+"} onClick={addItem} sx={{width: "20px"}}/>
                     </div>
                 }
             </div>
