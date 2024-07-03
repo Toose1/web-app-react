@@ -13,7 +13,7 @@ export default function App() {
   
   tg.onEvent("mainButtonClicked", () => {
     tg.MainButton.setParams({
-      text: `Пizda main`
+      text: `Пizda mailn`
     })
   })
 
