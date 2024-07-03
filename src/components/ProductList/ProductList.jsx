@@ -3,6 +3,7 @@ import CardItem from "../CardItem/CardItem"
 import { useTelegram } from "../../hooks/useTelegram"
 import img_cookie from "../media/cookie.png"
 import "./ProductList.css";
+import ConfirimForm from './components/ConfirimForm/ConfirimForm'
 
 const products = [
   {id: 1, title: "Donate package 1", price: 49, description: "We'll save your cookies ;)", image: img_cookie},
@@ -22,14 +23,12 @@ function sumOfQuantity(items) {
 }
 
 export default function ProductList() {
-
+  const[current, setCurrent] = useState("ProductList")
   const [addedItems, setAddedItems] = useState([])
   const {tg} = useTelegram()
 
   tg.onEvent("mainButtonClicked", () => {
-    tg.MainButton.setParams({
-      text: "buy buy"
-    })
+    setCurrent("ConfirimForm")
   })
 
   const onAdd = (item) => {
@@ -77,13 +76,24 @@ export default function ProductList() {
     
   return (
     <>
-      <section className="cards">
-        <div className="container container__cards">
-          {products.map(item => (
-            <CardItem item={item} onAdd={onAdd} onRemove={onRemove} />
-          ))}
-        </div>
+    {
+      current && "ProductList" (
+        <section className="cards">
+          <div className="container container__cards">
+            {products.map(item => (
+              <CardItem item={item} onAdd={onAdd} onRemove={onRemove} />
+            ))}
+          </div>
       </section>
+      )
+      
+    }
+    {
+      current && "ConfirimForm" (
+        <ConfirimForm />
+      )
+    }
+      
     </>
   )
 }
