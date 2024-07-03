@@ -30,7 +30,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100px;
 }
 
 .image__container {

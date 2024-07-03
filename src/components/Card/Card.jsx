@@ -45,10 +45,10 @@ function Card({item, onAdd, onRemove}) {
             </div>
             <div className="btn-container">
                 {count === 0 ?
-                    <UniButton title={"ADD"} onClick={addItem}/> :
+                    <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
                     <div className='container'>
-                        <UniButton title={"-"} onClick={removeItem}/>
-                        <UniButton title={"+"} onClick={addItem}/>
+                        <UniButton title={"-"} onClick={removeItem} sx={{width: "50px"}}/>
+                        <UniButton title={"+"} onClick={addItem} sx={{width: "50px"}}/>
                     </div>
                 }
             </div>
