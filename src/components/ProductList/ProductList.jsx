@@ -45,7 +45,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Показать корзину`
+        text: `Показать корзин`
       })
     }
 
@@ -67,7 +67,7 @@ export default function ProductList() {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Показать корзину`
+        text: `Показат корзину`
       })
     }
   }
