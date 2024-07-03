@@ -12,7 +12,7 @@ function TgButton({item, onAdd, onRemove}) {
 
     return (
     <Stack direction="row" spacing={2}>
-      <Button variant="contained" color="success" sx={{borderRadius: "20px"}}>
+      <Button variant="contained" color="success" sx={{borderRadius: "10px"}}>
         Success
       </Button>
     </Stack>
