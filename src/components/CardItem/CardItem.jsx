@@ -30,7 +30,7 @@ function CardItem({item, onAdd, onRemove}) {
 
     return (
         <>
-            <Card sx={{ maxWidth: 200, display: "flex", flexDirection: "column", justifyContent: "space-between", p: "0.4rem 0.4rem", backgroundColor: "#222222"}}>
+            <Card sx={{ maxWidth: 200, display: "flex", flexDirection: "column", justifyContent: "space-between", backgroundColor: "#222222"}}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
@@ -49,7 +49,7 @@ function CardItem({item, onAdd, onRemove}) {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CardContent sx={{p: "0px"}}>
+                <CardContent>
                     <div className="btn-container">
                         {count === 0 ?
                             <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
