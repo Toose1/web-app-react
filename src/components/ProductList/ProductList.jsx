@@ -27,7 +27,9 @@ export default function ProductList() {
   const {tg} = useTelegram()
 
   tg.onEvent("mainButtonClicked", () => {
-    console.log("buy buy")
+    tg.MainButton.setParams({
+      text: "buy buy"
+    })
   })
 
   const onAdd = (item) => {
