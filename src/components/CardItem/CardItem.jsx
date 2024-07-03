@@ -49,11 +49,13 @@ function CardItem({item, onAdd, onRemove}) {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CardContent component="div" sx={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-                    {count === 0 ?
-                        <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
-                        <GroupButton onRemove={removeItem} onAdd={addItem} />
-                    }
+                <CardContent>
+                    <div className="btn-container">
+                        {count === 0 ?
+                            <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
+                            <GroupButton onRemove={removeItem} onAdd={addItem} />
+                        }
+                    </div>
                 </CardContent>
             </Card>
         </>
