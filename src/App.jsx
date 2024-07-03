@@ -17,8 +17,7 @@ export default function App() {
     <>
       <div className='App'>
         <Routes>
-          {/* <Route index element={<ProductList />}/> */}
-          <Route index element={<TgButton />}/>
+          <Route index element={<ProductList />}/>
         </Routes>
     </div>
     </>
