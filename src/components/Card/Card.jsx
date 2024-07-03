@@ -15,7 +15,6 @@ import { CardActionArea } from '@mui/material';
 
 function Card({item, onAdd, onRemove}) {
     const [count, setCount] = useState(0)
-    const [moreInfo, setMoreInfo] = useState(false)
 
     const addItem = () => {
         setCount(count+1)
@@ -25,18 +24,9 @@ function Card({item, onAdd, onRemove}) {
     const removeItem = () => {
 
         setCount(count-1)
-        onRemove(item)
-        
+        onRemove(item)   
     }
 
-    const onActive = () => {
-        setMoreInfo(true)
-        console.log(`${item.title}`)
-    }
-
-    const onDisactive = () => {
-        setMoreInfo(false)
-    }
 
     return (
         <>
