@@ -45,14 +45,14 @@ function CardItem({item, onAdd, onRemove}) {
                         <Typography variant="body2" color="text.secondary">
                             {item.description}
                         </Typography>
-                        <div className="btn-container">
-                            {count === 0 ?
-                            <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
-                            <GroupButton onRemove={removeItem} onAdd={addItem} />
-                            }
-                        </div>
                     </CardContent>
                 </CardActionArea>
+                <div className="btn-container">
+                    {count === 0 ?
+                    <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
+                    <GroupButton onRemove={removeItem} onAdd={addItem} />
+                    }
+                </div>
             </Card>
         </>
     )
