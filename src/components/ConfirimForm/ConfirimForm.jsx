@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 
-function ConfirimForm({title, onClick, sx}) {
+function ConfirimForm() {
 
     return (
       <>
