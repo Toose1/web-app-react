@@ -19,7 +19,8 @@ export default function App() {
         <Routes>
           <Route index element={<ProductList />}/>
         </Routes>
-    </div>
+        <TgButton />
+      </div>
     </>
   )
 }
