@@ -27,7 +27,13 @@ export default function ProductList() {
   const [addedItems, setAddedItems] = useState([])
   const {tg} = useTelegram()
 
-  
+  tg.onEvent("mainButtonClicked", () => {
+    setCurrent("ConfirimForm")
+    tg.MainButton.setParams({
+      text: `Пizda`
+    })
+  })
+
   const onAdd = (item) => {
     let exist = addedItems.find(i => i.id === item.id)
     let cart = []
