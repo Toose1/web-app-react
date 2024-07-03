@@ -45,7 +45,7 @@ function CardItem({item, onAdd, onRemove}) {
                     </CardContent>
                     <CardContent sx={{p: "3px", color: "white"}}>
                         <Typography variant="body2">
-                            ·{item.price}₽
+                            {item.price}₽
                         </Typography>
                     </CardContent>
                 </CardActionArea>
