@@ -77,7 +77,7 @@ export default function ProductList() {
   return (
     <>
     {
-      current && "ProductList" (
+      current ? "ProductList" (
         <section className="cards">
           <div className="container container__cards">
             {products.map(item => (
@@ -85,15 +85,9 @@ export default function ProductList() {
             ))}
           </div>
       </section>
-      )
+      ) : <ConfirimForm />
       
-    }
-    {
-      current && "ConfirimForm" (
-        <ConfirimForm />
-      )
-    }
-      
+    } 
     </>
   )
 }
