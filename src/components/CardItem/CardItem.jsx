@@ -48,7 +48,7 @@ function CardItem({item, onAdd, onRemove}) {
                             {item.price}₽
                         </Typography>
                     </CardContent>
-                    <CardContent>
+                    <CardContent sx={{justifyContent: "space-between"}}>
                         {count === 0 ?
                             <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
                             <GroupButton onRemove={removeItem} onAdd={addItem} />
