@@ -48,6 +48,12 @@ function CardItem({item, onAdd, onRemove}) {
                     </CardContent>
                 </CardActionArea>
             </Card>
+            <div className="btn-container">
+                {count === 0 ?
+                <UniButton title={"ADD"} onClick={addItem} sx={{borderRadius: "10px"}}/> :
+                <GroupButton onRemove={removeItem} onAdd={addItem} />
+                }
+            </div>
         </>
     )
 }
