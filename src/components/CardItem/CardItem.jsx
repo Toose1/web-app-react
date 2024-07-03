@@ -30,7 +30,7 @@ function CardItem({item, onAdd, onRemove}) {
 
     return (
         <>
-            <Card sx={{ maxWidth: 200, component: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+            <Card sx={{ maxWidth: 200, display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
