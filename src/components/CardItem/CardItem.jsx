@@ -39,7 +39,7 @@ function CardItem({item, onAdd, onRemove}) {
                         alt="green iguana"
                     />
                     <CardContent sx={{p: "0px", color: "white"}}>
-                        <Typography gutterBottom variant="h6" component="div">
+                        <Typography variant="h6" component="div">
                             {item.title}
                         </Typography>
                     </CardContent>
