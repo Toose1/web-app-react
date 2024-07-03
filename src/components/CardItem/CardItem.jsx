@@ -22,7 +22,6 @@ function CardItem({item, onAdd, onRemove}) {
     }
 
     const removeItem = () => {
-
         setCount(count-1)
         onRemove(item)   
     }
