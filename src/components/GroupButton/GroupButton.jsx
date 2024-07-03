@@ -12,8 +12,8 @@ function GroupButton({onRemove, onAdd}) {
           aria-label="Disabled button group"
           
         >
-          <Button onClick={onRemove} sx={{width: "50px", m: "2px", borderRadius: "10px"}}>-</Button>
-          <Button onClick={onAdd} sx={{width: "50px", m: "2px", borderRadius: "10px"}}>+</Button>
+          <Button onClick={onRemove} sx={{width: "50px", m: "2px", borderRadius: "8px"}}>-</Button>
+          <Button onClick={onAdd} sx={{width: "50px", m: "2px", borderRadius: "8px"}}>+</Button>
         </ButtonGroup>
       )
 }
